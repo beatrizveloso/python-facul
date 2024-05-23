@@ -36,3 +36,39 @@ print("A média é %f." % media)
 
 
 
+# Solicita nomes e os coloca em outra ordem
+
+nomes = []
+
+for i in range(5):
+  n = input("Digite o nome %d: " % (i + 1))
+  nomes.insert(5, n)
+
+for nome in nomes:
+  print(nome, end=" ")
+  
+  
+# Outra forma ...
+
+nomes = []
+
+for i in range(5):
+  n = input("Digite o nome %d: " % (i + 1))
+  nomes.append(n)
+
+for nome in nomes:
+  print(nome, end=" ")
+
+i = int(input("Qual o índice do nome que deseja imprimir? "))
+print(nomes[i])
+
+
+
+# Exemplo média de uma quantidade indeterminada de números
+
+numeros = []
+soma = 0
+
+resp = 1.0
+while resp != 0:
+  resp = float(input("Digite um número, 0 para terminar: "))
